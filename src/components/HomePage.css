@@ -35,12 +35,15 @@ header {
 
 nav {
     /* margin: 30px; */
-    padding-bottom: 40px;
+    padding: 6px;
     background-color: rgb(47, 46, 48);  
 }
 
 
-a.navbar-brand {
+p.navbar-brand {
     font-size: 30px;
+    color: aliceblue;
     
 }
+
+
