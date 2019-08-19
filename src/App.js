@@ -3,6 +3,12 @@ import React, { Component } from 'react'
 import './App.css';
 import EventE from './Events'
 import HomePage from './HomePage';
+import Login from './login/login'
+import Register from './login/register'
+import Volunteer from './login/Volunteer'
+import Organization from './login/Organization'
+import index from './login/index'
+
 // import EventCard from './EventCard';
 // import Newpost from './Newpost';
 // import logo from './logo.jpg'
@@ -27,24 +33,26 @@ class App extends Component {
       <BrowserRouter>
 
 
-        <HomePage/>
-      <div className="App">
-    
-       <p className="Events_content">
-        {this.state.events.map((event) => {
-          return <EventE
-            title={event.title}
-            date={event.date}
-            location={event.location}
-            volunteers={event.volunteers}
-          />
-          
-        })}
-        </p>
+        <HomePage />
+        <div className="App">
 
+          <p className="Events_content">
+            {this.state.events.map((event) => {
+              return <EventE
+                title={event.title}
+                date={event.date}
+                location={event.location}
+                volunteers={event.volunteers}
+              />
 
-      </div>
-   
+            })}
+          </p>
+<index/>
+
+        </div>
+        {/* <Organization/>
+        <Volunteer/> */}
+
       </BrowserRouter>
 
     )
