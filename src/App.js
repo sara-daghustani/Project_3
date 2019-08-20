@@ -1,24 +1,23 @@
-// import React from 'react';
 import React, { Component } from 'react'
 import './App.css';
 import EventE from './Events'
-import HomePage from './HomePage';
-import Login from './login/login'
-// import Register from './login/register'
-import Volunteer from './login/Volunteer'
-import Organization from './login/Organization'
-import {Register} from './login/index'
+// import NotFoundPage from './404.jsx'
+import EventList from './EventList'
+import { Register } from './login/register'
+import {Login} from "./login/login";
+import "./login/style.css";
+
 
 // import EventCard from './EventCard';
 import Newpost from './Newpost';
 // import logo from './logo.jpg'
 import Events from './Events';
 
-import { BrowserRouter, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink, Switch, Redirect } from 'react-router-dom';
 
-const Msg = () => {
-  return (<h1>Hi</h1>)
-}
+// const Msg = () => {
+//   return (<h1>Hi</h1>)
+// }
 
 class App extends Component {
 
@@ -43,25 +42,57 @@ class App extends Component {
     //   </BrowserRouter>
     // )
     return (
+
+
       <BrowserRouter>
+      
+        <div>
+          <nav className="sections">
+            <ul>
+              <li><NavLink to="/">Home</NavLink></li>
+              <li><NavLink to="/new-post" >New Event</NavLink></li>
+              <li><NavLink to="login/register" >Register</NavLink></li>
+              <li><NavLink to="login/login" >Log in</NavLink></li>
+            </ul>
+          </nav>
+          <header>
+            <div className="container h-100">
+              {/* <img src={logo} alt="logo" /> */}
+              <div className="row h-100 align-items-center">
+                <div className="col-lg-12">
+                  <h1 className="display-4 text-white mt-5 mb-2"></h1>
+                  <p className="lead mb-5 text-white-50"></p>
+                </div>
+              </div>
+            </div>
+          </header>
+          <Switch>
+          <Route exact path="/new-post" component={Newpost} />
+          <Route path="/login/register" component={Register} />
+          <Route path="/login/login" component={Login} />
+          {/* {Login} from "./login"; */}
+          {/* <Route path="/" exact component={EventList} /> */}
 
+          <Route
+  path="/" exact
+  render={(routeProps) => (
+    <EventList {...routeProps} events={this.state.events} />
+  )}
+/>
 
-        <HomePage />
+          {/* <React exact path='/404'component={NotFoundPage} />
+          <Redirect to= '/404'/> */}
+          </Switch>
+        
+
+        </div>
+
+        {/* <HomePage /> */}
         <div className="App">
+{/* <EventList events={this.state.events} /> */}
+         
 
-          <p className="Events_content">
-            {this.state.events.map((event) => {
-              return <EventE
-                title={event.title}
-                date={event.date}
-                location={event.location}
-                volunteers={event.volunteers}
-              />
-
-            })}
-          </p>
-          
-<index/>
+          {/* <index/> */}
 
         </div>
         {/* <Organization/>
