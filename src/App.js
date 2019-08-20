@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import './App.css';
 import EventE from './Events'
 // import NotFoundPage from './404.jsx'
+import EventList from './EventList'
+import { Register } from './login/register'
 import {Login} from "./login/login";
-import {Register} from "./login/register";
+import "./login/style.css";
 
 
 // import EventCard from './EventCard';
@@ -43,24 +45,16 @@ class App extends Component {
 
 
       <BrowserRouter>
+      
         <div>
           <nav className="sections">
             <ul>
-              <li><NavLink to="/" exact>Home</NavLink></li>
+              <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/new-post" >New Event</NavLink></li>
-              <li><NavLink to="/login/index">Register</NavLink></li>
-              <li><NavLink to="/login/index">Log in</NavLink></li>
-
+              <li><NavLink to="login/register" >Register</NavLink></li>
+              <li><NavLink to="login/login" >Log in</NavLink></li>
             </ul>
           </nav>
-          <Switch>
-          {/* <Route path="/" exact component={Events} /> */}
-          <Route exact path="/new-post" component={Newpost} />
-          <Route path="/login/register" component={Register} />
-          <Route path="/login/login" component={Login} />
-          {/* <React exact path='/404'component={NotFoundPage} /> */}
-          {/* <Redirect to= '/404'/> */}
-          </Switch>
           <header>
             <div className="container h-100">
               {/* <img src={logo} alt="logo" /> */}
@@ -72,23 +66,31 @@ class App extends Component {
               </div>
             </div>
           </header>
+          <Switch>
+          <Route exact path="/new-post" component={Newpost} />
+          <Route path="/login/register" component={Register} />
+          <Route path="/login/login" component={Login} />
+          {/* {Login} from "./login"; */}
+          {/* <Route path="/" exact component={EventList} /> */}
+
+          <Route
+  path="/" exact
+  render={(routeProps) => (
+    <EventList {...routeProps} events={this.state.events} />
+  )}
+/>
+
+          {/* <React exact path='/404'component={NotFoundPage} />
+          <Redirect to= '/404'/> */}
+          </Switch>
+        
 
         </div>
 
         {/* <HomePage /> */}
         <div className="App">
-
-          <p className="Events_content">
-            {this.state.events.map((event) => {
-              return <EventE
-                title={event.title}
-                date={event.date}
-                location={event.location}
-                volunteers={event.volunteers}
-              />
-
-            })}
-          </p>
+{/* <EventList events={this.state.events} /> */}
+         
 
           {/* <index/> */}
 
