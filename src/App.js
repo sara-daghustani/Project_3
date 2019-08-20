@@ -4,17 +4,21 @@ import './App.css';
 import EventE from './Events'
 import HomePage from './HomePage';
 import Login from './login/login'
-import Register from './login/register'
+// import Register from './login/register'
 import Volunteer from './login/Volunteer'
 import Organization from './login/Organization'
-import index from './login/index'
+import {Register} from './login/index'
 
 // import EventCard from './EventCard';
 import Newpost from './Newpost';
 // import logo from './logo.jpg'
+import Events from './Events';
 
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 
+const Msg = () => {
+  return (<h1>Hi</h1>)
+}
 
 class App extends Component {
 
@@ -29,6 +33,15 @@ class App extends Component {
     ]
   }
   render() {
+    // return (
+    //   <BrowserRouter>
+    //     <Route path="/" exact component={Msg} />
+    //     <Route path="/new-post" component={Newpost}/>
+
+    //     <li><NavLink to="/" exact>Home</NavLink></li>
+    //     <li><NavLink to="/new-post">New Event</NavLink></li>
+    //   </BrowserRouter>
+    // )
     return (
       <BrowserRouter>
 

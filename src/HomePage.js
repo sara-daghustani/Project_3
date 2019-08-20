@@ -11,10 +11,10 @@ import './HomePage.css';
 import Newpost from './Newpost'
 import Events from './Events';
 import Login from './login/login'
-import Register from './login/register'
+import {Register} from './login/index'
 import Volunteer from './login/Volunteer'
 import Organization from './login/Organization'
-import index from './login/index'
+
 // import logo from './logo.jpg'
 
 class HomePage extends Component {
@@ -23,17 +23,16 @@ class HomePage extends Component {
             <div>
                 <nav className="sections">
                     <ul>
-                        <li><NavLink to="/"exact>Home</NavLink></li>
+                        <li><NavLink to="/" exact>Home</NavLink></li>
                         <li><NavLink to="/new-post">New Event</NavLink></li>
                         <li><NavLink  to="/login/index">Sign up</NavLink></li>
                     </ul>
                 </nav>
-                <Route path="/" exact Component={Events} />
-                <Route path="/new-post" Component={Newpost}/>
-                <Route path="/login/index" Component={<index/>}/>
+                {/* <Route path="/" exact component={Events} /> */}
+                <Route path="/new-post" component={Newpost}/>
+                <Route path="/login/index" component={Register}/>
 
-{/* <Organization/>
-<Volunteer/> */}
+
                 <header>
                     <div class="container h-100">
                         {/* <img src={logo} alt="logo" /> */}
