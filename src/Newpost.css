@@ -1,0 +1,46 @@
+.base-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  
+  
+  label {
+    font-size: 20px;
+  }
+  
+  input {
+   
+    min-width: 18em;
+    height: 37px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  
+  .footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Link{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .helper-text{
+    color:#F44336;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

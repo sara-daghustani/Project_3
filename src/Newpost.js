@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-// import HomePage from './HomePage'
+import "./Newpost.css";
+
 // import { Modal, Button , Dropdown , Divider , Select ,actionHandler } from 'react-materialize'
 
 
@@ -84,7 +85,7 @@ class Newpost extends Component {
     render() {
         return (
    
-<form onSubmit={this.handleSubmit} > 
+<form className= "base-container"onSubmit={this.handleSubmit} > 
         <div class="form-group has-success"> 
             <label class="control-label col-sm-2">Event Name</label> 
             <div className='row'>

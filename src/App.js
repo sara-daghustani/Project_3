@@ -36,11 +36,6 @@ class App extends Component {
     //   <BrowserRouter>
     //     <Route path="/" exact component={Msg} />
     //     <Route path="/new-post" component={Newpost}/>
-
-    //     <li><NavLink to="/" exact>Home</NavLink></li>
-    //     <li><NavLink to="/new-post">New Event</NavLink></li>
-    //   </BrowserRouter>
-    // )
     return (
 
 
@@ -51,8 +46,8 @@ class App extends Component {
             <ul>
               <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/new-post" >New Event</NavLink></li>
-              <li><NavLink to="login/register" >Register</NavLink></li>
-              <li><NavLink to="login/login" >Log in</NavLink></li>
+              <li><NavLink to="/login/register" >Register</NavLink></li>
+              <li><NavLink to="/login/login" >Log in</NavLink></li>
             </ul>
           </nav>
           <header>
