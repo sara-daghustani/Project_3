@@ -10,7 +10,7 @@ import Organization from './login/Organization'
 import index from './login/index'
 
 // import EventCard from './EventCard';
-// import Newpost from './Newpost';
+import Newpost from './Newpost';
 // import logo from './logo.jpg'
 
 import { BrowserRouter } from 'react-router-dom';
@@ -47,6 +47,7 @@ class App extends Component {
 
             })}
           </p>
+          
 <index/>
 
         </div>

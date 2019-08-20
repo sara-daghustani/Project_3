@@ -27,15 +27,17 @@
 }
 
 header {
-    padding: 90px;
+    padding: 180px;
+    /* width: 150%; */
     /* box-shadow: 5px 10px 8px 10px #888888; */
     box-shadow: 1.5px 3px 2px 3px #afababd3;
     text-align: center;
-    background: url(./Volunteer-4.jpg);
-    background-position: 80%;
-    background-color: #000000;
+    background: url(./volunteer-logo.jpeg);
+   object-fit: cover;
+    background-position: 50%;
+    background-color: #fffffff8;
     /* background-position: 100% 100%; */
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     font-family: 'Lacquer', sans-serif;
     
 }
@@ -50,11 +52,12 @@ header {
 
 nav {
     /* margin: 30px; */
-    padding: 6px;
-    background-color: rgb(47, 46, 48);
+    padding: 10px;
+    background-color: rgb(69, 197, 233);
+    
 }
 
 p.navbar-brand {
-    font-size: 30px;
+    font-size: 0px;
     color: aliceblue;
 }
