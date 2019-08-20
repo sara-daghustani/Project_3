@@ -1,5 +1,6 @@
 body{
   text-align: center;
+  font-size: 15px;
 } 
 
 
@@ -36,6 +37,8 @@ body{
   .sections a:hover,
   .sectionsa:active,
   .sectionsa.active  {
-    color: aqua;
+    color: rgb(204, 114, 78);
+    font-size: 20px;
+
 
   }
