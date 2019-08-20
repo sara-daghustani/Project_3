@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./Newpost.css";
+import "./login/style.css";
 
 // import { Modal, Button , Dropdown , Divider , Select ,actionHandler } from 'react-materialize'
 
@@ -84,17 +84,17 @@ class Newpost extends Component {
     }
     render() {
         return (
-   
-<form className= "base-container"onSubmit={this.handleSubmit} > 
-        <div class="form-group has-success"> 
-            <label class="control-label col-sm-2">Event Name</label> 
+   <div className= "base-container">
+<form  onSubmit={this.handleSubmit} > 
+        <div > 
+            <label >Event Name</label> 
             <div className='row'>
-            <div class="col-sm-6"> 
-                <input class="form-control" type="text" placeholder="Enter the Event Name" 
+            <div > 
+                <input type="text" placeholder="Enter the Event Name" 
                 value={this.state.eventName} onChange={this.handleEventNameChange}/> 
             </div> 
-            <div className="col-sm-2">
-            <select class="mdb-select md-form" value={this.state.location} onChange={this.handleLocationChange}>
+            <div >
+            <select value={this.state.location} onChange={this.handleLocationChange}>
         <option value="" disabled selected>Choose the event city</option>
         <option value="Riyadh">Riyadh</option>
         <option value="Jeddah">Jeddah</option>
@@ -109,15 +109,15 @@ class Newpost extends Component {
             </div>
         </div> 
 
-        <div class="form-group has-success"> 
-            <label class="control-label col-sm-2">Event Start Date</label> 
+        <div > 
+            <label >Event Start Date</label> 
             <div className='row'>
-            <div class="col-sm-6"> 
-                <input class="form-control" type="date"   
+            <div > 
+                <input type="date"   
                 value={this.state.eventDate} onChange={this.handleEventDateChange}/> 
             </div>
-            <div class="col-sm-2"> 
-        <select class="mdb-select md-form" value={this.state.volunteersCategory} onChange={this.handleCategoryChange}>
+            <div > 
+        <select value={this.state.volunteersCategory} onChange={this.handleCategoryChange}>
         <option value="" disabled selected>Choose the volunteers category</option>
         <option value="Riyadh">Children</option>
         <option value="Jeddah">Teenegers</option>
@@ -128,49 +128,49 @@ class Newpost extends Component {
             </div>
         </div> 
 
-        <div class="form-group has-success"> 
-            <label class="control-label col-sm-2">Event Logo/Image </label> 
-            <div class="col-sm-6"> 
-                <input class="form-control" type='file' placeholder="Enter the Event Image"
+        <div > 
+            <label >Event Logo/Image </label> 
+            <div > 
+                <input type='file' placeholder="Enter the Event Image"
                 value={this.state.eventImage} onChange={this.handleImageChange}/> 
             </div> 
         </div>
 
-        <div class="form-group has-success"> 
-            <label class="control-label col-sm-2">Volunteers Number </label> 
-            <div class="col-sm-6"> 
-                <input class="form-control" type='number' placeholder="Enter the required number of Volunteers"
+        <div > 
+            <label >Volunteers Number </label> 
+            <div > 
+                <input type='number' placeholder="Enter the required number of Volunteers"
                 value={this.state.volunteersNumber} onChange={this.handleVolunteersChange}/> 
             </div> 
         </div>
 
-        <div class="form-group has-success"> 
-            <label class="control-label col-sm-2">Event Describtion </label> 
-            <div class="col-lg-4"> 
-                <textarea class="form-control" placeholder="Enter an idea about the event"
+        <div > 
+            <label >Event Describtion </label> 
+            <div > 
+                <textarea placeholder="Enter an idea about the event"
                 value={this.state.eventAct} onChange={this.handleEventActivityChange}/> 
             </div> 
         </div>
 
 
-        <div class="form-group has-success">
+        <div >
         <div className='row'>
-        <div className="col-lg-2"> 
+        <div > 
         
         </div>
         </div>
         </div>
-        {/* <div class="form-group has-success">
+        {/* <div >
         
         </div> */}
         
-        <div class="container"> 
-            <button type='submit' class="btn btn-primary">Login</button> 
+        <div > 
+            <button type='submit' class="btn btn-info">Submit</button> 
              
         </div> 
     </form>     
 
-    
+    </div>
         )
     }
 }

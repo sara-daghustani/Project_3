@@ -1,8 +1,7 @@
-body{
+body {
   text-align: center;
-  font-size: 15px;
-} 
-
+  font-size: 20px;
+}
 
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -32,42 +31,38 @@ body{
   to {
     transform: rotate(360deg);
   }
-} */ 
+} */
 
-  .sections a:hover,
-  .sectionsa:active,
-  .sectionsa.active  {
-    color: rgb(204, 114, 78);
-    font-size: 20px;
+.sections a:hover, .sectionsa:active, .sectionsa.active {
+  color: rgb(204, 114, 78);
+  font-size: 20px;
+}
 
-
-  }
-
-  
 .HomePage a:hover, .HomePage a:active,
 /* only active page */
 
 .HomePage a.active {
-    color: #201d1d;
-    font-weight: bolder
+  color: #201d1d;
+  font-weight: bolder
 }
 
 header {
-    padding: 180px;
-    /* width: 150%; */
-    /* box-shadow: 5px 10px 8px 10px #888888; */
-    box-shadow: 1.5px 3px 2px 3px #afababd3;
-    text-align: center;
-    background: url(./new_logo.jpg);
-   object-fit: cover;
-    background-position: 50%;
-    background-color: #fffffff8;
-    /* background-position: 100% 100%; */
-    background-repeat: no-repeat;
-    font-family: 'Lacquer', sans-serif;
-    
+  height: 400px;
+  /* padding: 100px; */
+  /* width: 100%; */
+  /* box-shadow: 5px 10px 8px 10px #888888; */
+  box-shadow: 1.5px 3px 2px 3px #745252d3;
+  /* text-align: center; */
+  background: url(./LOGO2.png);
+  /* object-fit: fill; */
+  background-size:cover;
+  
+  /* background-position: 300%; */
+  background-color: #f1ebeb;
+  background-position: -40% 60%;
+  background-repeat: no-repeat;
+  /* font-family: 'Lacquer', sans-serif; */
 }
-
 
 /* .header-site{
    background-color: #000000;
@@ -77,13 +72,17 @@ header {
 } */
 
 nav {
-    /* margin: 30px; */
-    padding: 10px;
-    background-color: rgb(69, 197, 233);
-    
+  /* margin: 30px; */
+  padding: 10px;
+  background-color: rgb(112, 176, 194);
+  font-size: 20;
 }
 
+/* header {
+  /* margin-bottom: 0.4px;   */
+/* }  */
+
 p.navbar-brand {
-    font-size: 0px;
-    color: aliceblue;
+  /* font-size: 0px; */
+  color: aliceblue;
 }

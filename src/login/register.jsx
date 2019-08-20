@@ -174,6 +174,7 @@ export class Register extends React.Component {
                             </div>
                             <Organization error={this.state.error} name={this.state.name} email={this.state.email} phonenumber={this.state.phonenumber} location={this.state.location} password={this.state.password} functionPhone={(v) => this.functionPhone(v)} functionName={(v) => this.functionName(v)} functionEmail={(v) => this.functionEmail(v)} functionLocation={(v) => this.functionLocation(v)} functionOrganization={(v) => this.functionOrganization(v)} functionVolenteer={(v) => this.functionVolenteer(v)} functionPassword={(v) => this.functionPassword(v)}
                             />
+                            
                             <div className="footer">
                                 <button type="submit" class="waves-effect waves-light btn">Register</button>
                             </div>
