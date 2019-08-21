@@ -8,17 +8,19 @@
 }
 
 div.EventE{
-    width: 350px;
+    /* padding: 11px; */
+    width: 290px;
     height: 350px;
-    text-align: center;
+    text-align: left;
     /* padding: 10px; */
     border-radius: 10px;
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px 0 rgba(128, 128, 128, 0.24);
 
 }
 
 .EventE:hover {
-    background-color: rgb(190, 208, 233);
+    background-color:#547dab07;
+    cursor: pointer;
 }
 /* 
 .Events {

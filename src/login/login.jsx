@@ -83,7 +83,7 @@ export class Login extends React.Component{
                 <button type="submit" class="waves-effect waves-light btn">Login</button>
             </div>
             <div class="Link"> 
-                <a class="grey-text" href="#!"> New user? Register to create your account</a>
+                <a class="grey-text" href="/login/register"> New user? <span className="Links">Register</span> to create your account</a>
             </div>
         </form>
         );
