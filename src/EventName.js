@@ -16,7 +16,9 @@ console.log(this.state.event);
           <div className='col-10 mx-auto col-md-6 my-3'>
 
             <button type='button'  onClick={this.props.back} class="btn btn-info">back to event list</button> {}
-            <button type='button' onClick={this.props.getEvent} class="btn btn-info">Go To Event</button>
+            {/* <button type='button' onClick={this.deletePostHandler} class="btn btn-info">Delete</button> */}
+
+            {/* <button type='button' onClick={this.props.getEvent} class="btn btn-info">Go To Event</button> */}
             <p/>
             <img src={this.state.event.image} className='d-block w-100' alt='event'/>
          
@@ -36,12 +38,12 @@ console.log(this.state.event);
             {/* <li className='list-group-item text-slanted'>Event Date</li> */}
 
             <li className='list-group-item text-slanted'>Start:  { this.state.event.startDate} End: {this.state.event.endDate}</li> 
-            <li className='list-group-item text-slanted'> City - { this.state.event.eventLocation}</li>
+            <li className='list-group-item text-slanted'> City: { this.state.event.eventLocation}</li>
             <li className='list-group-item text-slanted'> Interest - { this.state.event.eventCategory}</li>
-            <li className='list-group-item text-slanted'>Volunteer Category - {this.state.event.volunteerCategory}</li>
-            <li className='list-group-item text-slanted'>Volunteer Number - {this.state.event.numberOfVolunteer}</li>
-            <li className='list-group-item text-slanted'>Volunteer Gender - {this.state.event.conditions}</li>
-            <li className='list-group-item text-slanted'>About The Event - {this.state.event.summary}</li>
+            <li className='list-group-item text-slanted'>Volunteer Category: {this.state.event.volunteerCategory}</li>
+            <li className='list-group-item text-slanted'>Volunteer Number: {this.state.event.numberOfVolunteer}</li>
+            <li className='list-group-item text-slanted'>Volunteer Gender: {this.state.event.conditions}</li>
+            <li className='list-group-item text-slanted'>About The Event: {this.state.event.summary}</li>
 
             </ul>
           </div>

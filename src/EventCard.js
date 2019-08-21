@@ -53,6 +53,13 @@ back = ()=>{
     i : 0 ,
    
   })
+
+  // let deletePostHandler = () => {
+  //   axios.delete('/posts/' + this.state.id)
+  //       .then(response => {
+  //           console.log(response);
+  //       });
+// }
 }
   render() {
       
