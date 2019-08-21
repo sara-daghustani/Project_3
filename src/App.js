@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './App.css';
-// import NotFoundPage from './404.jsx'
 import EventList from './EventList'
 import { Register } from './login/register'
 import { Login } from "./login/login";
@@ -18,20 +17,13 @@ import { BrowserRouter, Route, NavLink, Switch, Redirect } from 'react-router-do
 class App extends Component {
 
   state = {
-    events: [
-      { id: "1", title: "Organizing", date: "13/12/2019", location: "Riyadh", volunteers: "5" },
-      { id: "4", title: "Drawing", date: "13/12/2019", location: "Abha", volunteers: "6" },
-      { id: "4", title: "Drawing", date: "13/12/2019", location: "Abha", volunteers: "6" },
-      { id: "1", title: "Organizing", date: "13/12/2019", location: "Riyadh", volunteers: "5" },
-      { id: "4", title: "Drawing", date: "13/12/2019", location: "Abha", volunteers: "6" },
-    
-    ]
+    events: []
+ 
   }
   render() {
     // return (
     //   <BrowserRouter>
     //     <Route path="/" exact component={Msg} />
-    //     <Route path="/new-post" component={Newpost}/>
     return (
 
 <div>
@@ -51,34 +43,22 @@ class App extends Component {
             <Route exact path="/new-post" component={Newpost} />
             <Route path="/login/register" component={Register} />
             <Route path="/login/login" component={Login} />
-            {/* {Login} from "./login"; */}
-            {/* <Route path="/" exact component={EventList} /> */}
+
 
             <Route
               path="/" exact
               render={(routeProps) => (
-                <EventCard {...routeProps} events={this.state.events} />
+                <EventCard {...routeProps} events={this.state.events.events} />
               )}
             />
-{/* 
-            <React path='/404' component={NotFoundPage} />
-            <Redirect to='/404' /> */}
+
           </Switch>
 
 
         </div>
-        {/* <HomePage /> */}
-          {/* <EventList events={this.state.events} /> */}
 
-
-          {/* <index/> */}
-
-        {/* </div> */}
-        {/* <Organization/>
-        <Volunteer/> */}
 
       </BrowserRouter>
-{/* <EventCard/> */}
 </div>
     )
   }

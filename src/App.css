@@ -16,10 +16,12 @@ body {
 }
 
 header {
-  margin: 16px;
+  margin: 10px;
   height: 430px;
   border-radius: 5px;
-  background: url(./logo2.png);
+  background: url(./LOGO2.png);
+  /* filter: blur(8px);
+  -webkit-filter: blur(4px); */
   background-size: 65%;
   background-color: #ede9ea;
   background-position: center;

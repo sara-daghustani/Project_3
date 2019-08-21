@@ -1,0 +1,46 @@
+/* // FOR SOME REASON IF I DELETE THIS FILE THE APP BREAKS !!! */
+.EventE {
+    width: 30%;
+    margin: 14px;
+    border:1px solid rgb(238, 238, 238);
+    box-shadow: 0 2px 3px #ccc;
+    padding: 16px;
+    text-align: center;
+}
+
+div.EventE{
+    padding: 11px; 
+    width: 290px;
+    height: 350px;
+    text-align: left;
+    padding: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 3px 8px 0 rgba(128, 128, 128, 0.24); 
+
+} 
+
+.EventE:hover {
+    background-color:#547dab07;
+    cursor: pointer;
+}
+
+.Events {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+       
+} 
+
+p.Events_content{
+    padding: 30px;
+    font-size: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+
+}
+
+ 
+
