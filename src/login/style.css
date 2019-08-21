@@ -42,3 +42,8 @@ input {
   flex-direction: column;
   align-items: center;
 }
+
+.Links {
+color: #27A99E;
+text-decoration: underline ;
+}

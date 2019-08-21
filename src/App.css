@@ -47,19 +47,20 @@ body {
 }
 
 header {
-  height: 400px;
+  margin: 16px;
+  height: 430px;
+  border-radius: 5px;
   /* padding: 100px; */
   /* width: 100%; */
   /* box-shadow: 5px 10px 8px 10px #888888; */
-  box-shadow: 1.5px 3px 2px 3px #745252d3;
+  /* box-shadow: 1.5px 3px 2px 3px #745252d3; */
   /* text-align: center; */
-  background: url(./LOGO2.png);
+  background: url(./logo2.png);
   /* object-fit: fill; */
-  background-size:cover;
-  
+  background-size: 65%;
+  background-color: #ede9ea;
   /* background-position: 300%; */
-  background-color: #f1ebeb;
-  background-position: -40% 60%;
+  background-position: center;
   background-repeat: no-repeat;
   /* font-family: 'Lacquer', sans-serif; */
 }
@@ -73,9 +74,10 @@ header {
 
 nav {
   /* margin: 30px; */
-  padding: 10px;
-  background-color: rgb(112, 176, 194);
-  font-size: 20;
+  /* padding: 10px; */
+  background-color: rgb(187, 118, 147, 0.678);
+  font-size: 30px;
+  font-weight: bold;
 }
 
 /* header {

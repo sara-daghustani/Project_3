@@ -209,7 +209,7 @@ export class Register extends React.Component {
                                 <button type="submit" class="waves-effect waves-light btn">Register</button>
                             </div>
                             <div class="Link">
-                                <a class="grey-text" href="#!"> Already have an account LogIn</a>
+                                <a class="grey-text" href="/login/login"> Already have an account <span className="Links">LogIn</span></a>
                             </div>
                         </div>
                     </div>
