@@ -93,7 +93,8 @@ class PostForm extends Component {
                         <option value='Teenagers'>Teenagers</option>
                         <option value='Adults'>Adults</option>
                     </Select>                </div>
-                <button type='submit'>SUBMIT</button>
+                <button type="submit" class="btn btn-info">SUBMIT</button>
+                
                 </div>
             </form>
         )

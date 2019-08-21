@@ -92,7 +92,7 @@ export class Login extends React.Component{
                 </div>
             </div>
             <div className="footer">
-                <button type="submit" class="waves-effect waves-light btn">Login</button>
+                <button type="submit" class="btn btn-info">Login</button>
             </div>
             <div class="Link"> 
                 <a class="grey-text" href="/login/register"> New user? Register to create your account</a>

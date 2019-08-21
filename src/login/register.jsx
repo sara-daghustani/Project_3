@@ -207,7 +207,7 @@ export class Register extends React.Component {
                             <Organization error={this.state.error} name={this.state.userName} email={this.state.email} phoneNumber={this.state.phoneNumber} location={this.state.location} password={this.state.password} password_confirmation={this.state.password_confirmation} functionPhone={(v) => this.functionPhone(v)} functionuserName={(v) => this.functionuserName(v)} functionEmail={(v) => this.functionEmail(v)} functionLocation={(v) => this.functionLocation(v)} functionOrganization={(v) => this.functionOrganization(v)} functionVolenteer={(v) => this.functionVolenteer(v)} functionPassword={(v) => this.functionPassword(v)} functionPassword_confirmation={(v) => this.functionPassword_confirmation(v)}
                             />
                             <div className="footer">
-                                <button type="submit" class="waves-effect waves-light btn">Register</button>
+                                <button type="submit" class="btn btn-info">Register</button>
                             </div>
                             <div class="Link">
                                 <a class="grey-text" href="#!"> Already have an account LogIn</a>
