@@ -1,41 +1,51 @@
 import React, { Component } from 'react'
 import './Event.css'
 import {
-    Link
-  } from 'react-router-dom';
-  import EventName from './EventName';
-
+  Link
+} from 'react-router-dom';
+import EventName from './EventName';
+import Events from './Events';
 
 export class EventList extends Component {
 
-    change = ()=> {
-        this.props.change(this.props.id)
-        // this.props.enter()
-    }
-    render() {
-        return (
-            
-        // <div className="EventE">
-                  <div className='containerr'>
-        <div className='roww'>
-          <div className='col-10 mx-auto col-md-6 my-3'>
-              
-            <svg src={this.props.image} class="bd-placeholder-img card-img-top" width="90%" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="90%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">{this.props.name}</text></svg>
-            <small><strong>Start at :</strong> { this.props.sDate} _ <strong>In :</strong> {this.props.city}</small>
-            <small><strong>End at :</strong> { this.props.eDate } <strong> Require :</strong> {this.props.volntNum} <strong>Volunteer/s</strong></small> 
-                <p> <strong>Event: </strong>{this.props.gender}</p>
-                <p> <strong>Targeted Category: </strong>{this.props.vuCategory}</p>
-                <p> <strong>Event Interest: </strong>{this.props.eveInterest}</p>
-                {/* <p> <strong>Image:  </strong></p> */}
-                <button type='button' onClick={this.change} >Go To Event</button>
-                {/* <a href="/test" className='btn btn-warning mb-5 text-capitalize'>Go To Event</a> */}
-                </div>
+  change = () => {
+    this.props.change(this.props.id)
+    // this.props.enter()
+  }
+  render() {
+    return (
+      <div className="App">
 
-            </div>
-        </div>
-            
-        )
-    }
+<header>
+           <div className="container h-100">
+             {/* <img src={logo} alt="logo" /> */}
+             <div className="row h-100 align-items-center">
+               <div className="col-lg-12">
+                 <h1 className="display-4 text-white mt-5 mb-2"></h1>
+                 <p className="lead mb-5 text-white-50"></p>
+               </div>
+             </div>
+           </div>
+         </header>
+                 <p className="Events_content">
+            {this.props.events.map((event, index) => {
+              return <Events
+              key={index}
+              image={event.image}
+                title={event.eventName}
+                date={event.startDate}
+                location={event.eventLocation}
+                volunteers={event.numberOfVolunteer}
+                getEvent={()=>this.props.getOneEvent(event.id)}  
+                change={()=>this.props.change(event.id)}
+              />
+
+            })}
+          </p>
+
+          </div>
+    )
+  }
 }
 
 export default EventList

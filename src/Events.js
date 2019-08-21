@@ -2,6 +2,10 @@
 import React from 'react'
 import './Events.css'
 
+// const change = () => {
+//     this.props.change(this.props.id)
+// };
+
 
 const Events = (props) => {
     return (
@@ -12,6 +16,7 @@ const Events = (props) => {
                 <p> <strong>Event: </strong>{props.title} </p>
                 <p> <strong>Volunteers:  </strong>{props.volunteers}</p>
                 <small> {props.date} _ {props.location}</small>
+                <button onClick={props.change}>Details</button>
             </div>
             </div>
 
