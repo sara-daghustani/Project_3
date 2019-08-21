@@ -17,7 +17,7 @@ console.log(this.state.event);
 
             <button type='button' onClick={this.props.back} className='btn btn-warning mb-5 text-capitalize'>back to event list</button>
             <button type='button' onClick={this.props.getEvent} className='btn btn-warning mb-5 text-capitalize'>Go To Event</button>
-            <img src={this.state.event.image} className='d-block w-100' alt='event'/>
+            {/* <img src={this.state.event.image} className='d-block w-100' alt='event'/> */}
          
           </div>
           <div className='col-10 mx-auto col-md-6 my-3'>
@@ -30,9 +30,9 @@ console.log(this.state.event);
 
             <ul className='list-group mt-4' >
             <h3 className='mt-3 mb-4'>Event Details </h3> 
-            <li className='list-group-item text-slanted'>Event Start Date : {this.state.event.startDate}</li> 
-            <li className='list-group-item text-slanted'>Event City {this.state.event.eventLocation}</li>
-            <li className='list-group-item text-slanted'>Event Category {this.state.event.eventCategory}</li>
+            <li className='list-group-item text-slanted'>Event Start Date : {this.props.sDate} </li> 
+            <li className='list-group-item text-slanted'>Event City {this.props.name}</li>
+            <li className='list-group-item text-slanted'>Event Category {this.props.city}</li>
             <li className='list-group-item text-slanted'>Event Date</li>
 
             </ul>

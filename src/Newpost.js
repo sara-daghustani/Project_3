@@ -42,8 +42,9 @@ class PostForm extends Component {
         
         return (
             <form onSubmit={this.submitHandler}>
-                <div>
-                    <input type='text' name='eventName' onChange={this.changeHandler}/>
+                <div className="base-container">
+                    <div>
+                    <input type='text' name='eventName' onChange={this.changeHandler}eventName/>
                 </div>
                 <div>
                     <input type='date' name='startDate' onChange={this.changeHandler}/>
@@ -74,6 +75,7 @@ class PostForm extends Component {
                     <input type='text' name='volunteerCategory' onChange={this.changeHandler}/>
                 </div>
                 <button type='submit'>SUBMIT</button>
+                </div>
             </form>
         )
     }

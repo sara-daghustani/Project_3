@@ -3,46 +3,15 @@ body {
   font-size: 20px;
 }
 
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 .sections a:hover, .sectionsa:active, .sectionsa.active {
-  color: rgb(204, 114, 78);
+  color: rgba(28, 87, 93, 0.678);
   font-size: 20px;
 }
 
 .HomePage a:hover, .HomePage a:active,
-/* only active page */
 
 .HomePage a.active {
-  color: #201d1d;
   font-weight: bolder
 }
 
@@ -50,39 +19,21 @@ header {
   margin: 16px;
   height: 430px;
   border-radius: 5px;
-  /* padding: 100px; */
-  /* width: 100%; */
-  /* box-shadow: 5px 10px 8px 10px #888888; */
-  /* box-shadow: 1.5px 3px 2px 3px #745252d3; */
-  /* text-align: center; */
   background: url(./logo2.png);
-  /* object-fit: fill; */
   background-size: 65%;
   background-color: #ede9ea;
-  /* background-position: 300%; */
   background-position: center;
   background-repeat: no-repeat;
-  /* font-family: 'Lacquer', sans-serif; */
 }
 
-/* .header-site{
-   background-color: #000000;
-   background-image: url(http://www.yoursite.com/folder/image.jpg); 
-   background-position: 100% 100%;
-   background-repeat: no-repeat;
-} */
 
 nav {
-  /* margin: 30px; */
-  /* padding: 10px; */
-  background-color: rgb(187, 118, 147, 0.678);
+
+  background-color: rgba(94, 145, 150, 0.678);
   font-size: 30px;
   font-weight: bold;
 }
 
-/* header {
-  /* margin-bottom: 0.4px;   */
-/* }  */
 
 p.navbar-brand {
   /* font-size: 0px; */
