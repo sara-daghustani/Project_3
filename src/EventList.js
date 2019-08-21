@@ -1,16 +1,11 @@
 import React, { Component } from 'react'
 import './Event.css'
-import {
-  Link
-} from 'react-router-dom';
-import EventName from './EventName';
 import Events from './Events';
 
 export class EventList extends Component {
 
   change = () => {
     this.props.change(this.props.id)
-    // this.props.enter()
   }
   render() {
     return (
@@ -18,7 +13,6 @@ export class EventList extends Component {
 
 <header>
            <div className="container h-100">
-             {/* <img src={logo} alt="logo" /> */}
              <div className="row h-100 align-items-center">
                <div className="col-lg-12">
                  <h1 className="display-4 text-white mt-5 mb-2"></h1>
