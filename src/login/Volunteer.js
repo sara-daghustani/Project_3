@@ -9,18 +9,18 @@ export default class Volunteer extends Component {
                     <div className="form">
                         <div className="form-group">
                             {/* <lable htmlFor="name">Full Name</lable> */}
-                            <input type="text" name="name" className={`${(this.props.error && !this.props.error['name']) ? '' : 'invalid'}`} placeholder= "Full Name" value={this.props.name} onChange={(v)=>this.props.functionName(v)}/> 
+                            <input type="text" name="userName" className={`${(this.props.error && !this.props.error['userName']) ? '' : 'invalid'}`} placeholder= "Full Name" value={this.props.userName} onChange={(v)=>this.props.functionuserName(v)}/> 
                             <span className="helper-text" data-error="Invalid full name"></span> 
                         </div>
                         <div className="form-group">
-                            <Select value={this.props.gender} onChange={(v)=>this.props.functionGender(v)}>
+                            <Select name="gender" value={this.props.gender} onChange={(v)=>this.props.functionGender(v)}>
                                 <option value="" disabled>
                                 Your Gender
                                 </option>
-                                <option value="1">
+                                <option value="Male">
                                 Male
                                 </option>
-                                <option value="2">
+                                <option value="Female">
                                 Female
                                 </option>
                             </Select>
@@ -30,17 +30,17 @@ export default class Volunteer extends Component {
                             }
                         </div>
                         <div className="form-group">
-                            <Select value={this.props.age} onChange={(v)=>this.props.functionAge(v)}>
+                            <Select name="age" value={this.props.age} onChange={(v)=>this.props.functionAge(v)}>
                                 <option value="" disabled>
                                 Choose your Age Range
                                 </option>
-                                <option value="1">
+                                <option value="7-12 Years">
                                 7-12 Years
                                 </option>
-                                <option value="2">
+                                <option value="13-20 Years">
                                 13-20 Years
                                 </option>
-                                <option value="3">
+                                <option value="21-40+ Years">
                                 21-40+ Years
                                 </option>
                             </Select>
@@ -61,9 +61,9 @@ export default class Volunteer extends Component {
     
                         <div className="form-group">
                             {/* <lable htmlFor="phonenumber">Phone Number</lable> */}
-                            <input type="tel" name="phonenumber" placeholder= "Phone Number" value={this.props.phonenumber} onChange={(v)=>this.props.functionPhone(v)}/>  
+                            <input type="tel" name="phoneNumber" placeholder= "Phone Number" value={this.props.phoneNumber} onChange={(v)=>this.props.functionPhone(v)}/>  
                             {
-                                this.props.error && this.props.error.phonenumber &&
+                                this.props.error && this.props.error.phoneNumber &&
                                 <span className="helper-text">Invalid Phone Number eg. 05xxxxxxxx</span>
                             }
                         </div>
@@ -86,6 +86,14 @@ export default class Volunteer extends Component {
                                 this.props.error && this.props.error.password &&
                                 <span className="helper-text">Invalid Password <br/>eg no special character allow Or max length is 8</span>
                             } 
+                        </div>
+                        <div className="form-group">
+                            {/* <lable htmlFor="password">Password</lable> */}
+                            <input type="password" name="password_confirmation" placeholder="Password" value={this.props.password_confirmation} onChange={(v) => this.props.functionPassword_confirmation(v)} />
+                            {
+                                this.props.error && this.props.error.password_confirmation &&
+                                <span className="helper-text">Invalid Password <br/> eg no special character allow Or max length is 8</span>
+                            }
                         </div>
                     </div>
                 </div>

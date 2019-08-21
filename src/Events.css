@@ -14,13 +14,15 @@
 }
 
 div.EventE{
-    padding: 11px; 
+    /* padding: 11px;  */
     width: 290px;
     height: 350px;
     text-align: left;
-    padding: 10px; 
+    /* padding: 10px;  */
     border-radius: 10px; 
     box-shadow: 0 3px 8px 0 rgba(128, 128, 128, 0.24); 
+    display: flex;
+    justify-content: space-between;
 
 } 
 

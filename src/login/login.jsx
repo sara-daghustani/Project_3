@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css";
+import axios from 'axios'
 export class Login extends React.Component{
     constructor(props){
         super(props);
@@ -55,6 +56,17 @@ export class Login extends React.Component{
         }
                  
     };
+    componentDidMount(){
+        axios.get('https://cors-anywhere.herokuapp.com/https://volunteery-api.herokuapp.com/api/v1/users')
+        .then(res => {
+            console.log(res);
+            
+        })
+        .catch(err =>{
+            console.log(err);
+            
+        })
+    }
     render(){
         return( 
         <form onSubmit={this.handleNotification} className="base-container">
@@ -83,7 +95,7 @@ export class Login extends React.Component{
                 <button type="submit" class="waves-effect waves-light btn">Login</button>
             </div>
             <div class="Link"> 
-                <a class="grey-text" href="/login/register"> New user? <span className="Links">Register</span> to create your account</a>
+                <a class="grey-text" href="/login/register"> New user? Register to create your account</a>
             </div>
         </form>
         );
