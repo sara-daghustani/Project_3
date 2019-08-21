@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-
+​
 class PostForm extends Component {
     constructor(props) {
         super(props)
@@ -18,11 +18,11 @@ class PostForm extends Component {
             volunteerCategory: ''
         }
     }
-
+    
     changeHandler = (event) => {
         this.setState({[event.target.name]: event.target.value })
     }
-
+​
     submitHandler = (event) => {
         event.preventDefault()
         console.log(this.state);
@@ -34,9 +34,9 @@ class PostForm extends Component {
             console.log(error);
         })
     }
-
+​
     render() {
-
+​
         const { eventName, startDate, endDate, eventLocation, volunteerNum, summary, condition, image, eventCategory, volunteerCategory } = this.state;
         
         
@@ -78,5 +78,5 @@ class PostForm extends Component {
         )
     }
 }
-
+​
 export default PostForm

@@ -1,0 +1,40 @@
+.EventE {
+    width: 30%;
+    margin: 16px auto;
+    border:1px solid rgb(238, 238, 238);
+    box-shadow: 0 2px 3px #ccc;
+    padding: 16px;
+    text-align: center;
+}
+
+div.EventE{
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+
+}
+
+.EventE:hover {
+    background-color: rgb(190, 208, 233);
+}
+/* 
+.Events {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content:space-around; */
+/*        
+}  */
+
+p.Events_content{
+    padding: 40px;
+    font-size: 26px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+
+}

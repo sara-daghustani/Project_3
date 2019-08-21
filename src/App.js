@@ -5,9 +5,7 @@ import EventList from './EventList'
 import { Register } from './login/register'
 import { Login } from "./login/login";
 import "./login/style.css";
-
-
-// import EventCard from './EventCard';
+import EventCard from './EventCard'
 import Newpost from './Newpost';
 // import logo from './logo.jpg'
 
@@ -36,7 +34,7 @@ class App extends Component {
     //     <Route path="/new-post" component={Newpost}/>
     return (
 
-
+<div>
       <BrowserRouter>
 
         <div>
@@ -59,7 +57,7 @@ class App extends Component {
             <Route
               path="/" exact
               render={(routeProps) => (
-                <EventList {...routeProps} events={this.state.events} />
+                <EventCard {...routeProps} events={this.state.events} />
               )}
             />
 {/* 
@@ -69,7 +67,6 @@ class App extends Component {
 
 
         </div>
-
         {/* <HomePage /> */}
           {/* <EventList events={this.state.events} /> */}
 
@@ -81,7 +78,8 @@ class App extends Component {
         <Volunteer/> */}
 
       </BrowserRouter>
-
+{/* <EventCard/> */}
+</div>
     )
   }
 }
