@@ -1,70 +1,41 @@
 import React, { Component } from 'react'
-import Events from './Events'
+import './Event.css'
+import {
+    Link
+  } from 'react-router-dom';
+  import EventName from './EventName';
 
-export default class EventList extends Component {
+
+export class EventList extends Component {
+
+    change = ()=> {
+        this.props.change(this.props.id)
+        // this.props.enter()
+    }
     render() {
         return (
-        <div className="App">
+            
+        // <div className="EventE">
+                  <div className='containerr'>
+        <div className='roww'>
+          <div className='col-10 mx-auto col-md-6 my-3'>
+              
+            <svg src={this.props.image} class="bd-placeholder-img card-img-top" width="90%" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="90%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">{this.props.name}</text></svg>
+            <small><strong>Start at :</strong> { this.props.sDate} _ <strong>In :</strong> {this.props.city}</small>
+            <small><strong>End at :</strong> { this.props.eDate } <strong> Require :</strong> {this.props.volntNum} <strong>Volunteer/s</strong></small> 
+                <p> <strong>Event: </strong>{this.props.gender}</p>
+                <p> <strong>Targeted Category: </strong>{this.props.vuCategory}</p>
+                <p> <strong>Event Interest: </strong>{this.props.eveInterest}</p>
+                {/* <p> <strong>Image:  </strong></p> */}
+                <button type='button' onClick={this.change} >Go To Event</button>
+                {/* <a href="/test" className='btn btn-warning mb-5 text-capitalize'>Go To Event</a> */}
+                </div>
 
-          <header>
-          <div className="container h-100">
-            {/* <img src={logo} alt="logo" /> */}
-            <div className="row h-100 align-items-center">
-              <div className="col-lg-12">
-                <h1 className="display-4 text-white mt-5 mb-2"></h1>
-                <p className="lead mb-5 text-white-50"></p>
-              </div>
             </div>
-          </div>
-        </header>
-                 <p className="Events_content">
-            {this.props.events.map((event) => {
-              return <Events
-                title={event.title}
-                date={event.date}
-                location={event.location}
-                volunteers={event.volunteers}
-              />
-
-            })}
-          </p>
-          
-          </div>
+        </div>
+            
         )
     }
 }
 
-
-
-
-
-// state = {
-//   events: []
-// }
-// componentDidMount () {
-// axios.get('https://cors-anywhere.herokuapp.com/https://eventy-api.herokuapp.com/events.json')
-// .then(res => {
-// console.log(res.data);
-// this.setState({events: res.data})
-
-// })
-// .catch(err => {
-// console.log(err)
-// })
-// }
-// postSelectedHandler = (id) => {
-//   this.setState({selectedPostId: id});
-// }
-
-// render () {
-// let api = this.state.events.map((event, index) => {
-//     return <EventName key={index} name={event.eventName} sDate={event.startDate} img={event.image}/>
-//   })
-
-//   return (
-//       <>
-//       {api && api}
-//       </>
-//   );
-// }
-// }
+export default EventList

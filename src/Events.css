@@ -1,37 +1,38 @@
-.EventE {
-    width: 30%;
-    margin: 16px auto;
+.containerr {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    width: 26%;
+    border-radius: 10px; 
+    /* margin: 16px auto; */
     border:1px solid rgb(238, 238, 238);
     box-shadow: 0 2px 3px #ccc;
-    padding: 16px;
+    /* padding-bottom: 16px; */
     text-align: center;
+
+    
 }
 
 div.EventE{
-    /* padding: 11px; */
+    padding: 11px; 
     width: 290px;
     height: 350px;
     text-align: left;
-    /* padding: 10px; */
-    border-radius: 10px;
-    box-shadow: 0 3px 8px 0 rgba(128, 128, 128, 0.24);
+    padding: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 3px 8px 0 rgba(128, 128, 128, 0.24); 
 
-}
+} 
 
-.EventE:hover {
-    background-color:#547dab07;
+.containerr:hover {
+    background-color:#547dab73;
     cursor: pointer;
 }
-/* 
-.Events {
-    display: flex;
-    flex-flow: row wrap;
-    /* justify-content:space-around; */
-/*        
-}  */
 
-p.Events_content{
-    padding: 30px;
+
+.div.col-10.mx-auto.col-md-6.my-3
+{
+    /* padding: 30px; */
     font-size: 16px;
     display: flex;
     flex-flow: row wrap;
@@ -40,3 +41,6 @@ p.Events_content{
     margin: auto;
 
 }
+
+ 
+
