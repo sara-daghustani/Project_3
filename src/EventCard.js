@@ -1,4 +1,3 @@
-// import React, { Component } from 'react'
 import React, { Component } from 'react'
 import axios from 'axios'
 import EventName from './EventName';
@@ -63,12 +62,7 @@ back = ()=>{
 }
   render() {
       
-    // let api = this.state.events.map((event, index) => {
 
-    //   // return <EventName getEvent={()=>this.getOneEvent(event.id)} getList={()=>this.componentDidMount()} key={index} name={event.eventName} sDate={event.startDate} img={event.image}/>
-    //   return <EventList  key={index} events={event}  getEvent={this.getOneEvent}  change = {this.change}/>
-      
-    // })
     let api = <EventList events={this.state.events} getEvent={this.getOneEvent}  change = {this.change} />
     let api2 =  <EventName getEvent={()=>this.getOneEvent()} id={this.state.id} getList={()=>this.componentDidMount()}  events={this.state.events} back ={this.back} />
     // sDate={this.state.events.startDate} img={this.state.events.image}

@@ -1,16 +1,11 @@
 import React, { Component } from 'react'
 import './Event.css'
-import {
-  Link
-} from 'react-router-dom';
-import EventName from './EventName';
 import Events from './Events';
 
 export class EventList extends Component {
 
   change = () => {
     this.props.change(this.props.id)
-    // this.props.enter()
   }
   render() {
     return (

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+
 import { Checkbox, Icon} from 'react-materialize';
+
 export class Register extends Component {
     constructor(props) {
         super(props)
@@ -22,7 +24,6 @@ export class Register extends Component {
         let newUser = {...this.state.user}
         newUser[e.target.name] = e.target.value
         this.setState(prevState=>({user: newUser}))
-        //  this.setState({user: {[e.target.name]: e.target.value}})
         console.log(this.state);
         
     }
@@ -39,19 +40,6 @@ export class Register extends Component {
         
     }
     functionOrganization = (e) => {
-        // this.setState({
-        //    user: {
-        //     email: this.state.user.email,
-        //     password: this.state.user.password,
-        //     password_confirmation: this.state.user.password_confirmation,
-        //     userName: this.state.user.userName,
-        //     age: this.state.user.age,
-        //     phoneNumber: this.state.user.phoneNumber,
-        //     location: this.state.user.location,
-        //     gender: this.state.user.gender,
-        //     isOrganization: !this.state.user.isOrganization
-        // }
-        // })
         let newUser = {...this.state.user}
         newUser["isOrganization"] = !newUser["isOrganization"]
         this.setState(prevState=>({user: newUser}))
@@ -96,6 +84,7 @@ export class Register extends Component {
                         <input type="text" name="password_confirmation" value={password_confirmation} placeholder="Password confirmation" onChange={this.changeHandler}/>
                     </div>
                     <div>
+
                         
                     <div className="form-group">
                                 
@@ -110,6 +99,7 @@ export class Register extends Component {
                     <button type="submit" className="btn btn-info">submit</button>
                     <div class="Link">
                       <a class="grey-text" href="./login/login"> Already have an account LogIn</a>
+
                     </div>
                 </form>
                 
@@ -117,3 +107,4 @@ export class Register extends Component {
         )
     }
 }
+

@@ -10,6 +10,7 @@ const Events = (props) => {
     return (
         <div onClick={props.change} className="EventE">
             <div className="">
+
           
            <img src={props.image} className="bd-placeholder-img card-img-top" width="90%" height="200" />
                
@@ -19,6 +20,7 @@ const Events = (props) => {
                 <small> <strong>Location:  </strong>{props.location}</small> 
             </div>
         </div>
+
     )
 }
 
