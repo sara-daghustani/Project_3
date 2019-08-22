@@ -32,14 +32,15 @@ class EventName extends Component {
               <li className='list-group-item text-slanted'><strong>Start: </strong>  {this.state.event.startDate} End: {this.state.event.endDate}</li>
               <li className='list-group-item text-slanted'> <strong> City: </strong> {this.state.event.eventLocation}</li>
               <li className='list-group-item text-slanted'> <strong> Interest: </strong> {this.state.event.eventCategory}</li>
-              <li className='list-group-item text-slanted'><strong> Volunteer Category: </strong> {this.state.event.volunteerCategory}</li>
+              <li className='list-group-item text-slanted'><strong> Volunteer Gender: </strong> {this.state.event.volunteerCategory}</li>
               <li className='list-group-item text-slanted'> <strong> Volunteer Number: </strong>  {this.state.event.numberOfVolunteer}</li>
-              <li className='list-group-item text-slanted'><strong> Volunteer Gender: </strong> {this.state.event.conditions}</li>
+              <li className='list-group-item text-slanted'><strong> Volunteer Category: </strong> {this.state.event.conditions}</li>
               <li className='list-group-item text-slanted'><strong> About The Event: </strong> {this.state.event.summary}</li>
 
             </ul>
             <p></p>
             <button type='button' onClick={this.props.back} class="btn btn-info">back to event list</button> {}
+            <button type='button'  class="btn btn-info">Contact Info</button> {}
 
           </div>
         </div>
