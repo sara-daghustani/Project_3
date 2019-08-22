@@ -55,9 +55,9 @@ class PostForm extends Component {
                     <div>
                         <Select onChange={this.changeHandler} name='conditions'>
                             <option selected="true" disabled="disabled">Choose the volunteers gender</option>
-                            <option value='Children'>Male</option>
-                            <option value='Teenagers'>Famale</option>
-                            <option value='Adults'>F/M</option>
+                            <option value='Male'>Male</option>
+                            <option value='Famale'>Famale</option>
+                            <option value='F/M'>F/M</option>
                         </Select>
                     </div>
                     <div>
