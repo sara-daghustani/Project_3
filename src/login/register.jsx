@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { Checkbox } from 'react-materialize';
+import { Checkbox, Icon} from 'react-materialize';
 export class Register extends Component {
     constructor(props) {
         super(props)
@@ -65,18 +65,29 @@ export class Register extends Component {
         return (
             <div>
                 <form className= "base-container" onSubmit={this.submitHandler}>
-                <div className="form-group">
-                                
-                <p>
-                        <label>
-                            <input type="checkbox" onClick={this.functionOrganization} value={isOrganization}  />
-                            <span>Organization</span>
-                        </label>
-                        </p>
-                                
-                            </div>
+                <div className= "header">Register</div>
+                
                     <div>
-                        <input type="text" name="email" value={email} placeholder="email" onChange={this.changeHandler}/>
+                        <input type="text" name="userName" value={userName} placeholder="UserName" onChange={this.changeHandler}/>
+                    </div>
+
+                    <div>
+                        <input type="text" name="age" value={age} placeholder="age" onChange={this.changeHandler}/>
+                    </div>
+
+                    <div>
+                        <input type="text" name="gender" value={gender} placeholder="gender" onChange={this.changeHandler}/>
+                    </div>
+
+                    <div>
+                        <input type="text" name="location" value={location} placeholder="location" onChange={this.changeHandler}/>
+                    </div>
+                    
+                    <div>
+                        <input type="text" name="phoneNumber" value={phoneNumber} placeholder="phone number" onChange={this.changeHandler}/>
+                    </div>
+                     <div>
+                        <input type="text" icon='email' name="email" value={email} placeholder="email" onChange={this.changeHandler}/>
                     </div>
                     <div>
                         <input type="text" name="password" value={password} placeholder="password" onChange={this.changeHandler}/>
@@ -85,25 +96,21 @@ export class Register extends Component {
                         <input type="text" name="password_confirmation" value={password_confirmation} placeholder="Password confirmation" onChange={this.changeHandler}/>
                     </div>
                     <div>
-                        <input type="text" name="userName" value={userName} placeholder="UserName" onChange={this.changeHandler}/>
+                        
+                    <div className="form-group">
+                                
+                                <p>
+                                <label>
+                                    <input type="checkbox" onClick={this.functionOrganization} value={isOrganization}  />
+                                    <span>Organization</span>
+                                </label>
+                                </p>  
+                                </div>
                     </div>
-                    <div>
-                        <input type="text" name="age" value={age} placeholder="age" onChange={this.changeHandler}/>
-                    
+                    <button type="submit" className="btn btn-info">submit</button>
+                    <div class="Link">
+                      <a class="grey-text" href="./login/login"> Already have an account LogIn</a>
                     </div>
-                    <div>
-                        <input type="text" name="phoneNumber" value={phoneNumber} placeholder="phone number" onChange={this.changeHandler}/>
-                    </div>
-                    <div>
-                        <input type="text" name="location" value={location} placeholder="location" onChange={this.changeHandler}/>
-                    </div>
-                    <div>
-                        <input type="text" name="gender" value={gender} placeholder="gender" onChange={this.changeHandler}/>
-                    </div>
-                    <div>
-                        {/* <input type="text" name="isOrganization" value={isOrganization} placeholder="isOrganization" onChange={this.changeHandler}/> */}
-                    </div>
-                    <button type="submit">submit</button>
                 </form>
                 
             </div>

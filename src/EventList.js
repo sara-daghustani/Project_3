@@ -17,12 +17,16 @@ export class EventList extends Component {
       <div className="App">
 
 <header>
+  
            <div className="container h-100">
-             {/* <img src={logo} alt="logo" /> */}
              <div className="row h-100 align-items-center">
                <div className="col-lg-12">
-                 <h1 className="display-4 text-white mt-5 mb-2"></h1>
-                 <p className="lead mb-5 text-white-50"></p>
+                 <div>
+                 <h1 className="display-4 mt-5 mb-2 asd">MAKE THE 
+                   DIFFERENCE & VOLUNTEERS </h1>
+                 <p className=" lead mb-5 text-black-50">
+                 Together we can change the world  </p>
+                 </div>
                </div>
              </div>
            </div>
